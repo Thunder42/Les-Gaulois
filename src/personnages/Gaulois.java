@@ -22,12 +22,16 @@ public class Gaulois {
 		System.out.println(nom + " envoie un grand coup dans la mâchoire de " + romain.getNom());
 		romain.recevoirCoup(force/3);
 	}
-//	@Override
-//	public String toString() {
-//		return "Gaulois [nom=" + nom + ", force=" + force + ", effetPotion=" + effetPotion + "]";
-//	}
+	@Override
+	public String toString() {
+		return "Gaulois [nom=" + nom + ", force=" + force + ", effetPotion=" + effetPotion + "]";
+	}
 	public static void main(String[] args) {
 		Gaulois asterix = new Gaulois("Astérix",8);
-		System.out.println(asterix.getNom());
+		System.out.println(asterix);
+		System.out.println(asterix.prendreParole());
+		asterix.parler("Ca va faire mal, ca va barder la baguarre !!");
+		Romain baba = new Romain("Orum",5);
+		asterix.frapper(baba);
 	}
 }
