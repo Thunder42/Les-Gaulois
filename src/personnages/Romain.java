@@ -25,4 +25,11 @@ public class Romain {
 			parler("J'abandonne...");
 		}
 	}
+	public static void main(String[] args) {
+		Romain baba = new Romain("Orum",4);
+		System.out.println(baba);
+		System.out.println(baba.prendreParole());
+		baba.parler("Vous connaissez ma soeur Yaga ?");
+		baba.recevoirCoup(8);
+	}
 }
