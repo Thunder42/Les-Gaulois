@@ -16,7 +16,7 @@ public class Scenario {
 		obelix.parler("Par Bélénos, ce n'est pas juste !");
 		panoramix.booster(asterix);
 		asterix.parler("Bonjour");
-		Romain minus = new Romain("Minus",20);
+		Romain minus = new Romain("Minus",20,2);
 		minus.parler("UN GAU... UN GAUGAU...");
 		for (int i = 0; i < 3; i++) {
 			asterix.frapper(minus);

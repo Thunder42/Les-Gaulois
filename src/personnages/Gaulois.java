@@ -35,7 +35,7 @@ public class Gaulois {
 		System.out.println(asterix);
 		System.out.println(asterix.prendreParole());
 		asterix.parler("Ca va faire mal, ca va barder la baguarre !!");
-		Romain baba = new Romain("Orum",5);
+		Romain baba = new Romain("Orum",5,2);
 		asterix.frapper(baba);
 		asterix.boirePotion(7);
 		asterix.frapper(baba);
