@@ -34,19 +34,19 @@ public class Romain {
 	}
 	public void sEquiper(Equipement equip) {
 		switch (nbEquipements) {
-		case 0:
-			System.out.println("Passage 0");
-			peutEquiper(equip);
+		case 2:
+			System.out.println("Le soldat "+getNom()+" est déja bien protégé !");
+		break;
 		case 1:
-			System.out.println("Passage 1");
 			if (equipements[0] == equip) {
 				System.out.println("Le soldat "+getNom()+" possède déjà un "+equip.toString()+"!");
 			} else {
 				peutEquiper(equip);
 			}
-		case 2:
-			System.out.println("Passage 2");
-			System.out.println("Le soldat "+getNom()+" est déja bien protégé !");
+		break;
+		case 0:
+			peutEquiper(equip);
+		break;
 		}
 	}
 	private void peutEquiper(Equipement equip) {
@@ -60,16 +60,16 @@ public class Romain {
 		System.out.println(baba.prendreParole());
 		baba.parler("Vous connaissez ma soeur Yaga ?");
 		baba.recevoirCoup(8);
-		Equipement equip = Equipement.CASQUE;
-		System.out.println(equip);
-		equip = Equipement.BOUCLIER;
-		System.out.println(equip);
-		equip = Equipement.CASQUE;
-		baba.sEquiper(equip);
-		baba.sEquiper(equip);
-		equip = Equipement.BOUCLIER;
-		baba.sEquiper(equip);
-		baba.sEquiper(equip);
+		Equipement equip1 = Equipement.CASQUE;
+		System.out.println(equip1);
+		equip1 = Equipement.BOUCLIER;
+		System.out.println(equip1);
+		equip1 = Equipement.CASQUE;
+		baba.sEquiper(equip1);
+		baba.sEquiper(equip1);
+		Equipement equip2 = Equipement.BOUCLIER;
+		baba.sEquiper(equip2);
+		baba.sEquiper(equip2);
 //      régler ça
 	}
 }
