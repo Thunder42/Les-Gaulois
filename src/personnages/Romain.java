@@ -62,12 +62,12 @@ public class Romain {
 		int oldForce = force;
 		forceCoup = CalculResistanceEquipement(forceCoup);
 		force -= forceCoup;
-		if (force > 0) {
-			parler("Aïe");
-		} else {
-			equipementEjecte = ejecterEquipement();
-			parler("J'abandonne...");
-		}
+//		if (force > 0) {
+//			parler("Aïe");
+//		} else {
+//			equipementEjecte = ejecterEquipement();
+//			parler("J'abandonne...");
+//		}
 		switch (force) {
 		case 0:
 			parler("Aïe");
@@ -120,6 +120,7 @@ public class Romain {
 	public int getForce() {
 		return force;
 	}
+	//Utiliser les règles de sonarLint pour modifier le code
 	public static void main(String[] args) {
 		Romain baba = new Romain("Orum",6,2);
 		System.out.println(baba.prendreParole());
@@ -135,6 +136,5 @@ public class Romain {
 		Equipement equip2 = Equipement.BOUCLIER;
 		baba.sEquiper(equip2);
 		baba.sEquiper(equip2);
-//      régler ça
 	}
 }

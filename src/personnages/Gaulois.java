@@ -44,6 +44,7 @@ public class Gaulois {
 		effetPotion = forcePotion;
 		parler("Merci druide, je sens que ma force est " + effetPotion + " fois décuplée");
 	}
+	//Utiliser les règles de sonarLint pour modifier le code
 	public static void main(String[] args) {
 		Gaulois asterix = new Gaulois("Astérix",8);
 		System.out.println(asterix);
